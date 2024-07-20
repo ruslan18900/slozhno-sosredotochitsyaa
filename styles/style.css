@@ -93,6 +93,7 @@
 }
 
 .page-title {
+  align-self: end;
   color: var(--brand-color, #db00ff);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -153,8 +154,10 @@
 }
 
 .header__theme-menu {
-  justify-self: end;
-  margin-block: 65px;
+  justify-self: center; 
+  margin-inline-start: 20px;
+  margin-block-start: 0;
+  margin-block-end: 0; 
 }
 
 .header__theme-menu-list {
@@ -192,7 +195,7 @@
 }
 
 .header__title {
-  margin-block: 55px;
+  margin-block: 46px;
   color: var(--highlight-color, #000028);
   font-weight: 700;
   font-size: inherit;
@@ -207,7 +210,10 @@
 }
 
 .footer {
-  place-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 @media (width >= 768px) {
@@ -262,6 +268,7 @@
   }
 
   .header__title {
+    align-self: center;
     justify-self: end;
     inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
   }
@@ -288,8 +295,8 @@
   .header__theme-menu {
     justify-self: center;
     margin-inline-start: 20px;
-    margin-block-start: 0;
-    margin-block-end: 215px;
+    margin-block-start: 2px;
+    margin-block-end: 0;
   }
 
   .header__theme-menu-list {
