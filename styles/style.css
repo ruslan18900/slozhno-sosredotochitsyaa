@@ -51,10 +51,13 @@
 
 .link {
   text-decoration: none;
+  
 }
 
 .link:hover {
   text-decoration: underline;
+  text-shadow: none;
+  
 }
 
 .link:focus {
@@ -169,7 +172,7 @@
 .header__theme-menu-button {
   border: 1px solid transparent;
   padding: 2px 12px;
-  color: var(--secondary-color, #ff0070);
+  color: var(--secondary-color, #ff007066);
   line-height: 18px;
   text-transform: lowercase;
   background: transparent;
@@ -183,7 +186,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border-color: var(--secondary-color-o-40, #ff007040);
+  border-color: var(--secondary-color-o-40, #ff007066);
 }
 
 .header__theme-menu-button:focus {
